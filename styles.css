@@ -1,19 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Libre:wght@300&family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@100;400&family=Poppins:ital,wght@0,500;0,700;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Libre:wght@300&family=Big+Shoulders+Inline+Text:wght@700&family=Dancing+Script:wght@400;700&family=Indie+Flower&family=Josefin+Sans:wght@100;400&family=Moirai+One&family=Poppins:ital,wght@0,500;0,700;1,400;1,600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+}
+:root {
+  color: darkslategrey;
+  background: #dfe0e1;
 }
 
 header {
-  background: #a8a6a1;
+  background: #dfe0e1;
   width: 100%;
   padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  -webkit-backface-visibility: visible;
 }
 .icons {
   display: flex;
@@ -41,7 +45,7 @@ a {
   text-shadow: #000000 0px 0px 10px;
   text-decoration: none;
   list-style: none;
-  color: rgb(0, 0, 0);
+  color: darkslategrey;
   font-weight: 900;
   font-family: "Amatic SC", cursive;
   font-size: 40px;
@@ -51,7 +55,7 @@ a {
   display: none;
 }
 main {
-  background: #a8a6a1;
+  background: #dfe0e1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,18 +64,17 @@ main {
 }
 #hero {
   max-width: 1200px;
-  margin-top: 150px;
-  padding: 50px 0;
+  margin-top: 170px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 #hero h1 {
-  font-family: "Dancing Script", cursive;
-  color: rgb(0, 0, 0);
+  font-family: "Moirai One", cursive;
+  color: darkslategray;
   text-shadow: #000000 0px 0px 10px;
-  padding: 20px;
+  padding: 20px 10px 50px;
   font-size: 90px;
   font-weight: 700;
   gap: 1px;
@@ -80,28 +83,40 @@ main {
   align-items: center;
 }
 #hero h2 {
-  font-family: "Dancing Script", cursive;
-  color: rgb(208, 255, 0);
-  text-shadow: rgba(0, 153, 0, 0.692) 0px 5px 1px;
-  padding: 1px;
-  font-size: 40px;
+  font-family: "Amatic SC", cursive;
+  color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 45px;
   font-weight: 400;
   width: 100%;
   min-width: 300px;
 }
 .hero-bottom {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  padding: 30px 0;
   gap: 20px;
 }
-.bottom-loguin {
+
+.bottoms {
   box-shadow: #000000 0px 0px 10px;
   display: flex;
+
   background: burlywood;
   padding: 0 20px;
 }
-.bottom-regist {
-  box-shadow: #000000 0px 0px 10px;
+
+#about {
+  max-width: 1200px;
+  margin-top: 170px;
+  padding: 20px 20px;
   display: flex;
-  background: burlywood;
-  padding: 0 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about h3 {
 }
