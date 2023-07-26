@@ -7,9 +7,9 @@
 }
 
 header {
-  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  background: #a8a6a1;
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,9 +17,14 @@ header {
 }
 .icons {
   display: flex;
-
-  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
 }
+.icons img {
+  display: flex;
+  width: 60px;
+}
+
 .logo {
   width: 250px;
   display: flex;
@@ -28,7 +33,6 @@ header {
 .navbar-list {
   display: flex;
   justify-content: space-around;
-  background-color: red;
   list-style: none;
   gap: 30px;
 }
@@ -45,4 +49,59 @@ a {
 #menu-toggle,
 .menu-label {
   display: none;
+}
+main {
+  background: #a8a6a1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#hero {
+  max-width: 1200px;
+  margin-top: 150px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#hero h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(0, 0, 0);
+  text-shadow: #000000 0px 0px 10px;
+  padding: 20px;
+  font-size: 90px;
+  font-weight: 700;
+  gap: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hero h2 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(208, 255, 0);
+  text-shadow: rgba(0, 153, 0, 0.692) 0px 5px 1px;
+  padding: 1px;
+  font-size: 40px;
+  font-weight: 400;
+  width: 100%;
+  min-width: 300px;
+}
+.hero-bottom {
+  display: flex;
+  gap: 20px;
+}
+.bottom-loguin {
+  box-shadow: #000000 0px 0px 10px;
+  display: flex;
+  background: burlywood;
+  padding: 0 20px;
+}
+.bottom-regist {
+  box-shadow: #000000 0px 0px 10px;
+  display: flex;
+  background: burlywood;
+  padding: 0 20px;
 }
