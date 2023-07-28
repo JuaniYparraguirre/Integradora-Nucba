@@ -14,7 +14,6 @@ header {
   background: #dfe0e1;
   border-bottom: 1px solid black;
   width: 100%;
-  padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,23 +22,24 @@ header {
 .icons {
   display: flex;
   align-items: center;
-  gap: 2px;
-  margin-right: 10px;
+  padding: 10px;
+  gap: 10px;
 }
-
 .icons img {
   display: flex;
   width: 60px;
 }
 
 .logo {
-  width: 250px;
+  width: 200px;
+
   display: flex;
 }
 
 .navbar-list {
   display: flex;
   justify-content: space-around;
+  /* padding: 10px 200px 10px 220px; */
   list-style: none;
   gap: 30px;
 }
@@ -66,20 +66,19 @@ main {
 }
 .titulos {
   max-width: 1200px;
-  margin-top: 170px;
+  margin-top: 150px;
   padding: 20px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 .titulos h1 {
   font-family: "Moirai One", cursive;
   color: darkslategray;
-  text-shadow: #000000 0px 0px 10px;
-  padding: 20px 10px 50px;
-  font-size: 90px;
+  text-shadow: #000000 0px 0px 50px;
+  font-size: 150px;
   font-weight: 700;
-  gap: 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,12 +88,7 @@ main {
   color: darkslategrey;
   display: flex;
   justify-content: center;
-
-  padding: 10px;
   font-size: 45px;
-
-  width: 100%;
-  min-width: 300px;
 }
 .titulos span {
   font-family: "Amatic SC", cursive;
@@ -112,8 +106,8 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 30px 0;
-  gap: 20px;
+  padding: 20px 0;
+  gap: 50px;
 }
 
 .bottoms {
@@ -137,9 +131,6 @@ main {
   justify-content: center;
   padding: 10px;
   font-size: 45px;
-
-  width: 100%;
-  min-width: 300px;
 }
 #about p {
   font-family: "Amatic SC", cursive;
@@ -149,4 +140,28 @@ main {
   text-align: center;
   padding: 10px;
   font-size: 30px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 30px;
+}
+.card-img {
+  display: flex;
+  width: 390px;
+  height: 500px;
+  box-shadow: #000000 0px 0px 10px;
+}
+.card-carlitos {
+  display: flex;
+  gap: 30px;
+}
+.card-roman {
+  display: flex;
+  gap: 30px;
+}
+.card-campo {
+  display: flex;
+  gap: 30px;
 }
