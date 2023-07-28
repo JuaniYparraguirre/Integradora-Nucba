@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 :root {
   color: darkslategrey;
@@ -11,19 +12,21 @@
 
 header {
   background: #dfe0e1;
+  border-bottom: 1px solid black;
   width: 100%;
   padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  -webkit-backface-visibility: visible;
 }
 .icons {
   display: flex;
   align-items: center;
   gap: 2px;
+  margin-right: 10px;
 }
+
 .icons img {
   display: flex;
   width: 60px;
@@ -60,17 +63,16 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
-#hero {
+.titulos {
   max-width: 1200px;
   margin-top: 170px;
-  padding: 20px 20px;
+  padding: 20px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#hero h1 {
+.titulos h1 {
   font-family: "Moirai One", cursive;
   color: darkslategray;
   text-shadow: #000000 0px 0px 10px;
@@ -82,11 +84,24 @@ main {
   flex-direction: column;
   align-items: center;
 }
-#hero h2 {
+.titulos h2 {
   font-family: "Amatic SC", cursive;
   color: darkslategrey;
   display: flex;
   justify-content: center;
+
+  padding: 10px;
+  font-size: 45px;
+
+  width: 100%;
+  min-width: 300px;
+}
+.titulos span {
+  font-family: "Amatic SC", cursive;
+  color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   padding: 10px;
   font-size: 45px;
   font-weight: 400;
@@ -104,19 +119,34 @@ main {
 .bottoms {
   box-shadow: #000000 0px 0px 10px;
   display: flex;
-
   background: burlywood;
   padding: 0 20px;
 }
 
 #about {
   max-width: 1200px;
-  margin-top: 170px;
-  padding: 20px 20px;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 #about h3 {
+  font-family: "Amatic SC", cursive;
+  color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 45px;
+
+  width: 100%;
+  min-width: 300px;
+}
+#about p {
+  font-family: "Amatic SC", cursive;
+  color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
 }
