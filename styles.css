@@ -31,7 +31,7 @@ header {
 }
 
 .logo {
-  width: 200px;
+  width: 230px;
 
   display: flex;
 }
@@ -39,7 +39,6 @@ header {
 .navbar-list {
   display: flex;
   justify-content: space-around;
-  /* padding: 10px 200px 10px 220px; */
   list-style: none;
   gap: 30px;
 }
@@ -63,34 +62,26 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 .titulos {
   max-width: 1200px;
-  margin-top: 150px;
+  margin-top: 180px;
   padding: 20px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+
 .titulos h1 {
-  font-family: "Moirai One", cursive;
-  color: darkslategray;
-  text-shadow: #000000 0px 0px 50px;
-  font-size: 150px;
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.titulos h2 {
   font-family: "Amatic SC", cursive;
   color: darkslategrey;
   display: flex;
   justify-content: center;
   font-size: 45px;
 }
-.titulos span {
+.titulos h2 {
   font-family: "Amatic SC", cursive;
   color: darkslategrey;
   display: flex;
@@ -119,7 +110,7 @@ main {
 
 #about {
   max-width: 1200px;
-  padding: 30px 20px;
+  padding: 160px 20px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -189,20 +180,37 @@ main {
   width: 100%;
   min-width: 300px;
 }
-.contact-btn {
-  display: flex;
-  padding: 20px;
-  gap: 20px;
-}
+
 .contact-box {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   gap: 30px;
 }
 .contact-me {
+  background: burlywood;
+  box-shadow: #000000 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  gap: 10px;
+}
+.contact-me b {
+  font-family: "Amatic SC", cursive;
+  color: darkslategrey;
+  font-size: 25px;
+  font-weight: 900;
+}
+.contact-me i {
+  padding: 10px 15px;
+  font-weight: 700;
+}
+
+.icons-contact {
   display: flex;
   justify-content: center;
-
-  background-color: sandybrown;
-  width: 200px;
+  align-items: center;
+  width: 50px;
 }
