@@ -57,6 +57,7 @@ a {
   display: none;
 }
 main {
+  max-width: 100%;
   background: #dfe0e1;
   display: flex;
   flex-direction: column;
@@ -66,7 +67,7 @@ main {
 }
 .titulos {
   max-width: 1200px;
-  margin-top: 180px;
+  margin-top: 150px;
   padding: 20px 60px;
   display: flex;
   flex-direction: column;
@@ -94,10 +95,9 @@ main {
   min-width: 300px;
 }
 .hero-btn {
-  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 10px;
   gap: 50px;
 }
 
@@ -158,15 +158,25 @@ main {
 }
 #contact {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 160px 0px 50px;
+  gap: 20px;
 }
 .contact-h3 {
   font-family: "Amatic SC", cursive;
+  font-style: italic;
   color: darkslategrey;
   display: flex;
   justify-content: center;
   font-size: 45px;
+}
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  gap: 20px;
 }
 .contact-p {
   font-family: "Amatic SC", cursive;
@@ -175,12 +185,24 @@ main {
   justify-content: center;
   text-align: center;
   padding: 10px;
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 400;
-  width: 100%;
-  min-width: 300px;
 }
-
+.contact-input {
+  font-family: "Amatic SC", cursive;
+  width: 300px;
+  padding: 10px;
+  font-size: 30px;
+}
+.contact-mail a {
+  font-family: "Amatic SC", cursive;
+  background: burlywood;
+  box-shadow: #000000 0px 0px 10px;
+  width: 500px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 900;
+}
 .contact-box {
   display: flex;
   flex-direction: row;
@@ -213,4 +235,41 @@ main {
   justify-content: center;
   align-items: center;
   width: 50px;
+}
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 30px;
+}
+.footer-a {
+  text-decoration: overline;
+  list-style: none;
+  color: burlywood;
+  font-weight: 900;
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+}
+.footer-img {
+  background-color: burlywood;
+  border-radius: 16px;
+  width: 250px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+footer h4 {
+  font-family: "Amatic SC", cursive;
+  color: burlywood;
+  font-size: 25px;
 }
