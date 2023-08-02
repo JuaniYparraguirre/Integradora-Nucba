@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 :root {
   color: darkslategrey;
@@ -198,7 +198,6 @@ main {
   font-family: "Amatic SC", cursive;
   background: burlywood;
   box-shadow: #000000 0px 0px 10px;
-  width: 500px;
   padding: 10px;
   font-size: 30px;
   font-weight: 900;
