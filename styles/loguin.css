@@ -4,13 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Amatic SC", cursive;
+  /* border: 1px solid red; */
 }
-body {
+main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #111;
+  background: #dfe0e1;
 }
 .square {
   position: relative;
@@ -23,7 +25,7 @@ body {
 .square i {
   position: absolute;
   inset: 0;
-  border: 2px solid#fff;
+  border: 2px solid darkslategray;
   transition: 0.5s;
 }
 .square i:nth-child(1) {
@@ -41,7 +43,8 @@ body {
 }
 .square:hover i {
   border: 6px solid var(--clr);
-  filter: drop-shadow(0 0 20px var(--crl));
+  filter: drop-shadow(0 0 30px var(--crl));
+  -webkit-filter: drop-shadow(0 0 30px var(--crl));
 }
 @keyframes animate {
   0% {
@@ -72,7 +75,7 @@ body {
 }
 .login h2 {
   font-size: 2em;
-  color: #fff;
+  color: darkslategrey;
 }
 .login .inputBx {
   position: relative;
@@ -83,26 +86,25 @@ body {
   width: 100%;
   padding: 12px 20px;
   background: transparent;
-  border: 2px solid #fff;
-  border-radius: 40px;
+  border: 2px solid darkslategray;
   font-size: 1.2em;
-  color: #fff;
+  color: darkslategray;
+  font-weight: 900;
   box-shadow: none;
   outline: none;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
 }
 .login .inputBx input[type="submit"] {
   width: 100%;
+  font-weight: 900;
   color: #0078ff;
-  background: linear-gradient(45deg, #ff357a, #fff);
-  border: none;
+  background: linear-gradient(45deg, burlywood, #fff);
+  box-shadow: #000000 0px 0px 10px;
   cursor: pointer;
+  position: relative;
 }
 .login .inputBx input::placeholder {
-  color: rgba(255, 255, 255, 0.75);
+  color: darkslategray;
+  font-weight: 900;
 }
 .login .links {
   position: relative;
@@ -112,7 +114,58 @@ body {
   justify-content: space-between;
   padding: 0 20px;
 }
-.login .links a {
-  color: #fff;
+.login .links-btn {
+  font-size: 25px;
+  color: darkslategray;
   text-decoration: none;
+}
+.links-btn::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: darkslategray;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.links-btn:hover::after {
+  transform: scaleX(1);
+}
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 30px;
+}
+.footer-a {
+  text-decoration: overline;
+  list-style: none;
+  color: burlywood;
+  font-weight: 900;
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+}
+.footer-img {
+  background-color: burlywood;
+  border-radius: 16px;
+  width: 250px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+footer h4 {
+  font-family: "Amatic SC", cursive;
+  color: burlywood;
+  font-size: 25px;
 }

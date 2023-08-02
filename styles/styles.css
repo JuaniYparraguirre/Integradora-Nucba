@@ -67,7 +67,7 @@ main {
 }
 .titulos {
   max-width: 1200px;
-  margin-top: 150px;
+  margin-top: 200px;
   padding: 20px 60px;
   display: flex;
   flex-direction: column;
