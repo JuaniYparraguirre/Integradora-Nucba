@@ -1,14 +1,15 @@
 @media (max-width: 992px) {
-  .icons img {
+  header {
+    background: #dfe0e1;
+    width: 100%;
     display: flex;
-    width: 60px;
-    margin-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
   }
-
   .navbar-list {
-    background: linear-gradient(to bottom, #a8a6a1, #2c3e50);
+    background: #dfe0e1;
     position: absolute;
-    top: 95%;
     width: 100%;
     left: 0%;
     padding: 0px 10px;
@@ -29,13 +30,15 @@
     display: flex;
   }
   #hero {
+    width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
     gap: 30px;
   }
-  .titulos h1 {
+  .title-logo {
     width: 100%;
+    height: 200px;
   }
 
   #about {
@@ -49,12 +52,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .about-cards-container {
-    flex-direction: column;
-  }
-  .about-cards-container2 {
-    flex-direction: column;
-  }
+
   #contact {
     text-align: center;
     justify-content: center;
