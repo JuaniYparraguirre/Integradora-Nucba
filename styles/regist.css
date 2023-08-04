@@ -5,13 +5,20 @@
   box-sizing: border-box;
   font-family: "Amatic SC", cursive;
 }
+body {
+  background-color: #dfe0e1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  max-width: 100%;
   background: #dfe0e1;
+  margin: 50px;
 }
 .square {
   position: relative;
