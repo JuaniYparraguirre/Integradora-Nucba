@@ -51,6 +51,19 @@ a {
   font-family: "Amatic SC", cursive;
   font-size: 40px;
 }
+.nav-int::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: darkslategray;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-int:hover::after {
+  transform: scaleX(1);
+}
 #menu-toggle,
 .menu-label {
   display: none;
@@ -143,10 +156,12 @@ main {
   height: 500px;
   box-shadow: #000000 0px 0px 10px;
 }
+
 .card-carlitos {
   display: flex;
   gap: 30px;
 }
+
 .card-roman {
   display: flex;
   gap: 30px;
@@ -250,12 +265,28 @@ footer {
   gap: 30px;
 }
 .footer-a {
-  text-decoration: overline;
   list-style: none;
   color: burlywood;
   font-weight: 900;
   font-family: "Amatic SC", cursive;
   font-size: 40px;
+}
+.footer-a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: burlywood;
+  transform: scaleX(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+.footer-a:hover::after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
 }
 .footer-img {
   background-color: burlywood;
