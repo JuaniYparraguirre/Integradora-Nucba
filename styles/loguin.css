@@ -4,14 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Amatic SC", cursive;
+  /* border: 1px solid red; */
 }
-body {
-  background-color: #dfe0e1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 main {
   display: flex;
   flex-direction: column;
@@ -19,68 +14,31 @@ main {
   align-items: center;
   max-width: 100%;
   background: #dfe0e1;
-  margin: 50px;
 }
-.square {
-  position: relative;
-  width: 500px;
-  height: 500px;
+.login-box {
   display: flex;
   justify-content: center;
   align-self: center;
-}
-.square i {
-  position: absolute;
-  inset: 0;
   border: 2px solid darkslategray;
-  transition: 0.5s;
-}
-.square i:nth-child(1) {
-  border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
-  animation: animate 6s linear infinite;
-}
-.square i:nth-child(2) {
-  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-  animation: animate 4s linear infinite;
-}
-.square i:nth-child(3) {
-  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-  animation: animate2 4s linear infinite;
-}
-.square:hover i {
-  border: 6px solid var(--clr);
-  filter: drop-shadow(0 0 30px var(--crl));
-}
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate2 {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  margin: 40px;
+  padding: 20px;
+  box-shadow: #000000 0px 0px 10px;
 }
 
 .login {
-  position: absolute;
   width: 300px;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  padding: 20px 0;
 }
 .login h2 {
-  font-size: 2em;
+  font-size: 40px;
+  font-weight: 900;
   color: darkslategrey;
+  text-shadow: #000000 0px 0px 10px;
 }
 .login .inputBx {
   position: relative;
@@ -143,16 +101,8 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  gap: 10px;
 }
-
 .footer-img {
   background-color: #dfe0e1;
   width: 250px;
-}
-footer h4 {
-  font-family: "Amatic SC", cursive;
-  color: #000000;
-  font-size: 25px;
 }
