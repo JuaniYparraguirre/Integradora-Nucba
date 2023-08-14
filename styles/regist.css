@@ -101,5 +101,11 @@ footer {
 }
 .footer-img {
   background-color: #dfe0e1;
-  width: 250px;
+  width: 100%;
+}
+@media (max-width: 390px) {
+  .regist-box {
+    margin: 10px;
+    width: 90%;
+  }
 }

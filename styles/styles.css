@@ -51,6 +51,9 @@ a {
   font-family: "Amatic SC", cursive;
   font-size: 40px;
 }
+.nav-int {
+  display: block;
+}
 .nav-int::after {
   content: "";
   display: block;
@@ -86,7 +89,9 @@ main {
   align-items: center;
   gap: 20px;
 }
-
+.title-logo {
+  width: 100%;
+}
 .titulos h1 {
   font-family: "Amatic SC", cursive;
   color: darkslategrey;
@@ -104,13 +109,13 @@ main {
   font-size: 45px;
   font-weight: 400;
   width: 100%;
-  min-width: 300px;
 }
 .hero-btn {
   display: flex;
   justify-content: center;
   padding: 20px 10px;
   gap: 50px;
+  width: 100%;
 }
 
 .btn {
